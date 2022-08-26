@@ -1,0 +1,37 @@
+import java.awt.geom.Arc2D.Double;
+import java.util.Scanner;
+
+public class NotasAlunos {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Scanner ent = new Scanner (System.in);
+		
+		int Nota; 
+		
+		System.out.println("Bem-Vindos ao Boletim Escolar");
+		System.out.println("");
+		// recebe a nota
+		System.out.println(" Digite a Nota: ");
+		
+		Nota = ent.nextInt(); 
+		if ( Nota >= 8) {
+			System.out.println( "Você Passou de Ano, sua nota é:  "  + Nota); }
+	
+		else if ( Nota  >= 5 && Nota <= 7  )
+		{
+				System.out.println("Você esta em Recuperação, sua nota é: "  + Nota );  
+				
+						
+				
+		}
+	else { System.out.println("Você esta Reprovado, sua nota é:  "  +  Nota );  
+
+		
+		}
+
+	}
+
+}
